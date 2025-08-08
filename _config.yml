@@ -6,7 +6,7 @@
 name: Jekyll
 
 # Short bio or description (displayed in the header)
-description: 
+description: des
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/jekyll-logo.png
@@ -47,7 +47,7 @@ url:https://animalpsychic.github.io/jekyll-now
 # (http://yourusername.github.io/repository-name)
 # and NOT your User repository (http://yourusername.github.io)
 # then add in the baseurl here, like this: "/jekyll-now"
-baseurl: "https://animalpsychic.github.io/jekyll-now"
+baseurl: "https://animalpsychic.github.io/jekyll-now/"
 
 #
 # !! You don't need to change any of the configuration flags below !!
