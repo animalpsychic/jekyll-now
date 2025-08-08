@@ -47,7 +47,7 @@ url:https://animalpsychic.github.io/jekyll-now
 # (http://yourusername.github.io/repository-name)
 # and NOT your User repository (http://yourusername.github.io)
 # then add in the baseurl here, like this: "/jekyll-now"
-baseurl: "/jekyll-now"
+baseurl: "https://animalpsychic.github.io/jekyll-now"
 
 #
 # !! You don't need to change any of the configuration flags below !!
