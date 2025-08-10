@@ -34,17 +34,8 @@
       </div>
     </div>
 
-    <div id="main" role="main" class="container" style="display:flex;gap:20px;">
-      <!-- TOC Sticky -->
-      <aside id="toc-container">
-        <h2>Daftar Isi</h2>
-        <ul id="toc-list"></ul>
-      </aside>
-
-      <!-- Konten -->
-      <div id="content-area" style="flex:1;">
-        {{ content }}
-      </div>
+    <div id="main" role="main" class="container">
+      {{ content }}
     </div>
 
     <div class="wrapper-footer">
@@ -56,60 +47,5 @@
     </div>
 
     {% include analytics.html %}
-
-    <!-- Script TOC -->
-    <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      const tocList = document.getElementById("toc-list");
-      const headings = document.querySelectorAll("#content-area h2, #content-area h3");
-
-      headings.forEach(h => {
-        if (!h.id) {
-          h.id = h.textContent.trim().toLowerCase().replace(/\s+/g, "-");
-        }
-        const li = document.createElement("li");
-        if (h.tagName === "H3") li.style.marginLeft = "15px";
-        const a = document.createElement("a");
-        a.href = "#" + h.id;
-        a.textContent = h.textContent;
-        li.appendChild(a);
-        tocList.appendChild(li);
-      });
-    });
-    </script>
-
-    <!-- Styling TOC -->
-    <style>
-    #toc-container {
-      width: 250px;
-      flex-shrink: 0;
-      position: sticky;
-      top: 20px;
-      align-self: flex-start;
-      background: #f9f9f9;
-      border: 1px solid #ddd;
-      padding: 15px;
-      height: max-content;
-    }
-    #toc-container h2 {
-      font-size: 1.2em;
-      margin-bottom: 10px;
-    }
-    #toc-container ul {
-      list-style: none;
-      padding-left: 0;
-      margin: 0;
-    }
-    #toc-container li {
-      margin-bottom: 5px;
-    }
-    #toc-container a {
-      text-decoration: none;
-      color: #0073aa;
-    }
-    #toc-container a:hover {
-      text-decoration: underline;
-    }
-    </style>
   </body>
 </html>
