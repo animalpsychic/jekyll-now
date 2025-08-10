@@ -283,6 +283,53 @@ footer {
   text-align: center;
 }
 
+.toc-layout {
+  display: flex;
+  gap: 20px;
+}
+
+#toc-container {
+  width: 220px;
+  flex-shrink: 0;
+  position: sticky;
+  top: 20px;
+  align-self: flex-start;
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 15px;
+  height: max-content;
+  font-size: 0.9em;
+}
+
+#toc-container h2 {
+  font-size: 1.1em;
+  margin-bottom: 10px;
+}
+
+#toc-container ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+#toc-container li {
+  margin-bottom: 5px;
+}
+
+#toc-container a {
+  text-decoration: none;
+  color: $blue;
+}
+
+#toc-container a:hover {
+  text-decoration: underline;
+}
+
+#content-area {
+  flex: 1;
+  min-width: 0;
+}
+
+
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 @import "highlights";
